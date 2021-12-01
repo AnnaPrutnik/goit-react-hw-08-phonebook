@@ -1,0 +1,54 @@
+.Form {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border: 1px solid green;
+  border-radius: 20px;
+}
+
+.FormBtn {
+  composes: Btn from '../ContactList/Contact.module.css';
+  align-self: center;
+}
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.Label {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(2, 129, 2);
+}
+
+.Input {
+  padding: 5px;
+
+  outline: none;
+
+  border: 1px solid rgba(2, 129, 2, 0.3);
+  border-radius: 7px;
+  box-shadow: 2px -2px 5px 0 rgba(4, 80, 10, 0.1),
+    -2px -2px 5px 0 rgba(4, 80, 10, 0.1), 2px 2px 5px 0 rgba(4, 80, 10, 0.1),
+    -2px 2px 5px 0 rgba(4, 80, 10, 0.1);
+  margin-right: 15px;
+}
+
+.FilterLabel {
+  composes: Label;
+  justify-content: center;
+}
+
+.FilterInput {
+  composes: Input;
+  margin-left: 15px;
+}

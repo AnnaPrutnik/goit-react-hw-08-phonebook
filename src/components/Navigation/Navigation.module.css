@@ -1,0 +1,29 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid green; */
+  box-shadow: 0 10px 20px rgba(66, 180, 66, 0.19),
+    0 6px 6px rgba(1, 112, 60, 0.23);
+}
+
+.NavLink {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.ActiveNavLink {
+  composes: NavLink;
+  color: rgb(2, 129, 2);
+}
+
+.NavList {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}

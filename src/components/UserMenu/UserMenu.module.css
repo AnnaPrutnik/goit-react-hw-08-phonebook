@@ -1,0 +1,14 @@
+.Container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.Text {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.LogBtn {
+  composes: Btn from '../ContactList/Contact.module.css';
+}
